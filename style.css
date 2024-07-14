@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+/* Reset some default styles */
+
+
+.profile-pic-container {
+    position:relative;
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #b69056; /* Facebook blue */
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    /* Ensures the image covers the container */
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #2a443c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #2a443c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: light-purple;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+*{
+    font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+.img-brand{
+    width: 50px;
+    height:50px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.img-brand:hover{
+    transform: rotate(360deg);
+}
+
+.navbar-brand:hover .img-brand{
+    box-shadow: 1px 1px 10px #2a443c,
+                -1px -1px 10px #2a443c;
+}
+
+.navbar-brand{
+     color: #ffffff;
+    text-decoration: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    transition: 0.5s;
+}
+
+.navbar-brand:hover{
+    text-shadow: 1px 1px 10px #2a443c,
+                -1px -1px 10px #2a443c;
+    transform: rotate(-1deg);
+}
+
+.navbar-custom {
+  transition:0.5s;
+  background-color: #5A020Cce; 
+}
+
+.navbar-custom:hover:not(footer) {
+  background-color: #71131Eee; 
+}
+
+.navbar li{
+    transition: 0.5s;
+}
+
+.navbar li:hover:not([id=coffee-nav-item]){
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+header{
+    background-color: #2a443c;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+
+}
+.logo{
+    text-decoration: none;
+    color: #a4c7cb;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color:#a4c7cb;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(za.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+ 
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    display:inline-block;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn{
+    color:#fff;
+    background-color: #3e5f55;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display:inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 75px;
+    margin-bottom: 40px;
+}
+.main-btn:hover{
+    background-color: rgb(52, 62, 63);
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #fff;
+    font-size: 2.7em;
+    padding-right: 30px;
+   
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    color:#2a443c;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin:15px;
+    transition: 0.7s ease;
+}
+.card:hover {
+    transform:scale(1.1);
+}
+.icon{
+    color: #2a443c;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #86a8ac;
+    font-size: 1.2em;
+    font-weight:700;
+    margin:10px;
+
+}
+.projects{
+    background-color:rgb(247, 247, 247);
+
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color:#2a443c;
+    border:1px solid white;
+    min-height: 14em;
+    width:23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-image{
+   opacity: 0.9;
+}
+.project-image img{
+    width: 100%;
+}
+.project-info{
+    padding:1em;  
+}
+.project-category{
+    font-size: 0.8em;
+    color:rgb(255, 255, 255);
+}
+.project-title{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: #a4c7cb;
+}
+.more-details:hover{
+    color: #3d6458;
+}
+
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info h3{
+    color: #000;
+}
+.contact .info p{
+    font: size 1.5em;
+}
+.footer{
+    background-color:black;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content:space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color:#2a443c;
+}
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023){
+    header{
+        padding:12px 20px;
+        }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+        font-size: 1em;
+    }
+    .main-content h3{
+        font-size:1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:641px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size:0.8em;
+    }
+    .main-content h3{
+        font-size:1.4em;
+    }
+
+}
+@media(max-width:300px){
+    body{
+        font-size: 10px;
+        
+    }
+}
